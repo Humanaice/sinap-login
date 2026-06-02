@@ -4,12 +4,13 @@ import backgroundImage from "../../assets/backgroundImage.png";
 
 function RootLayout() {
   return (
-    <div 
+    <div
       className="h-screen w-screen bg-cover bg-center fixed inset-0"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/30 via-green-500/20 to-blue-600/30"></div>
-      <main className="relative mx-auto flex h-screen w-full items-center justify-center px-6 py-12">
+      <div className="absolute inset-0 bg-[#00BED5] opacity-60 "></div>
+      <div className="absolute inset-0 bg-black opacity-40 "></div>
+      <main className="relative flex w-full items-center justify-center">
         <Outlet />
       </main>
     </div>

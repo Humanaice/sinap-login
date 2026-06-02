@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const Sidebar = () => {
+const Sidebar = ({ children }) => {
   return (
-    <div className="rounded-md fixed right-0 top-0 h-screen w-1/4 w-80 bg-white shadow-lg flex flex-col p-4">
-      <h2 className="text-xl font-bold mb-4"></h2>
+    <div className="rounded-s-2xl bg-white shadow-lg flex flex-col px-15  w-full lg:w-auto">
+      {children}
     </div>
   );
 };
